@@ -61,6 +61,12 @@ fieldset {
   border-radius: 1rem;
 }
 
+fieldset select {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 #hero {
   border: 1px solid purple;
   height: 340px;

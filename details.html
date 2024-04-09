@@ -1,174 +1,235 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda Virtual</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css..." />
-    <link rel="stylesheet" href="./styles/details.css" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="search">
-          <div class="logo">
-            <a href="index.html">
-              <img
-                src="../assets/tiendamia-logo.svg"
-                width="218"
-                alt="Logo store"
-              />
+        <div class="flex logo-search">
+          <h1>
+            <a href="./index.html">
+              <img width="150" src="./assets/tiendamia-logo.svg" alt="" />
             </a>
-          </div>
-          <div class="form">
-            <form>
-              <input type="text" placeholder="Search" />
-            </form>
-          </div>
-          <div class="social">
-            <!-- Aquí irán los íconos de redes sociales -->
-            <ul>
-              <li>
-                <a href="#"><img src="./assets/facebook.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="./assets/instagram.png" alt="" /></a>
-              </li>
+          </h1>
+          <input type="search" placeholder="Buscar..." />
+          <ul class="flex icons-social">
+            <li>
+              <a href="#">
+                <img
+                  width="25"
+                  height="25"
+                  src="./assets/facebook.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  width="25"
+                  height="25"
+                  src="./assets/instagram.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  width="25"
+                  height="25"
+                  src="./assets/cart-shopping-solid.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <nav>
+            <ul class="flex nav">
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Cómo comprar</a></li>
+              <li><a href="#">Costos y tarifas</a></li>
+              <li><a href="#">Mis pedidos</a></li>
+              <li><a href="#">Garantía</a></li>
             </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="offert-especial">
+      <div class="container flex promotion">
+        <span class="text-technology">tecnología</span>
+        <span class="text-renovation">renovada</span>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="center">
+          <div class="products details">
+            <div class="product-images-block">
+              <div class="thumbnail-container">
+                <img src="../assets/mock1.jpg" alt="Mackbook img 1" />
+              </div>
+              <div class="thumbnail-container">
+                <img src="../assets/mock2.jpg" alt="Mackbook img 2" />
+              </div>
+              <img class="main-image" src="./assets/mock1.jpg" alt="" />
+            </div>
+            <div class="product-description-block">
+              <h1 class="title">Nombre del Producto</h1>
+              <form class="selector">
+                <fieldset>
+                  <label class="label" for="color">Color</label>
+                  <select type="text" placeholder="Selecciona un color">
+                    <option value="Gris espacial">Gris espacial</option>
+                    <option value="Negro espacial">Negro espacial</option>
+                  </select>
+                </fieldset>
+              </form>
+              <p>Descripción</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus aperiam, voluptatibus cupiditate cum beatae soluta
+                repellendus! Delectus ex nihil laboriosam aliquam neque error
+                dignissimos nulla facilis eius, deleniti soluta facere?
+              </p>
+            </div>
+            <div class="product-checkout-block">
+              <div class="checkout-container">
+                <span class="checkout-total-label">Total:</span>
+                <h2 class="checkout-total-price">$152.400</h2>
+                <p class="checkout-description">
+                  Incluye impuesto PAIS y percepción AFIP. Podés recuperar AR$
+                  50711 haciendo la solicitud en AFIP.
+                </p>
+                <ul class="checkout-policy-list">
+                  <li>
+                    <span class="policy-icon"
+                      ><img
+                        width="25"
+                        height="25"
+                        src="./assets/truck-solid.svg"
+                        alt="Truck"
+                    /></span>
+                    <span class="policy-desc"
+                      >Agrega el producto al carrito para conocer los costos de
+                      envío</span
+                    >
+                  </li>
+                  <li>
+                    <span class="policy-icon"
+                      ><img
+                        width="25"
+                        height="25"
+                        src="./assets/plane-solid.svg"
+                        alt="Plane"
+                    /></span>
+                    <span class="policy-desc"
+                      >Recibí aproximadamente entre 10 y 15 días hábiles,
+                      seleccionando envío normal</span
+                    >
+                  </li>
+                </ul>
+                <div class="checkout-process">
+                  <div class="top">
+                    <input type="number" value="1" />
+                    <button class="btn-primary">Comprar</button>
+                  </div>
+                  <div class="bottom">
+                    <button class="btn-outline">Añadir al carrito</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="nav">
-          <ul>
+        <div>
+          <h2 class="offerts">Ofertas de la semana</h2>
+          <div class="products">
+            <div class="card-container">
+              <img src="./assets/mock1.jpg" alt="" />
+              <section class="card-content">
+                <h2>iPad Pro 12.9</h2>
+                <p>Silver</p>
+                <div class="price">
+                  <h2>$900000</h2>
+                  <p>50% Off</p>
+                </div>
+                <p>Incluye impuesto País y percepción AFIP</p>
+              </section>
+              <div class="card-footer">
+                <a href="">Más detalles</a>
+              </div>
+            </div>
+            <div class="card-container">
+              <img src="./assets/mock1.jpg" alt="" />
+              <section class="card-content">
+                <h2>iPad Pro 12.9</h2>
+                <p>Silver</p>
+                <div class="price">
+                  <h2>$900000</h2>
+                  <p>50% Off</p>
+                </div>
+                <p>Incluye impuesto País y percepción AFIP</p>
+              </section>
+              <div class="card-footer">
+                <a href="">Más detalles</a>
+              </div>
+            </div>
+            <div class="card-container">
+              <img src="./assets/mock1.jpg" alt="" />
+              <section class="card-content">
+                <h2>iPad Pro 12.9</h2>
+                <p>Silver</p>
+                <div class="price">
+                  <h2>$900000</h2>
+                  <p>50% Off</p>
+                </div>
+                <p>Incluye impuesto País y percepción AFIP</p>
+              </section>
+              <div class="card-footer">
+                <a href="">Más detalles</a>
+              </div>
+            </div>
+            <div class="card-container">
+              <img src="./assets/mock1.jpg" alt="" />
+              <section class="card-content">
+                <h2>iPad Pro 12.9</h2>
+                <p>Silver</p>
+                <div class="price">
+                  <h2>$900000</h2>
+                  <p>50% Off</p>
+                </div>
+                <p>Incluye impuesto País y percepción AFIP</p>
+              </section>
+              <div class="card-footer">
+                <a href="">Más detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <nav>
+          <ul class="flex nav-footer">
             <li><a href="#">Ofertas</a></li>
             <li><a href="#">Cómo comprar</a></li>
             <li><a href="#">Costos y tarifas</a></li>
             <li><a href="#">Mis pedidos</a></li>
             <li><a href="#">Garantía</a></li>
-            <!-- Más elementos de lista aquí -->
           </ul>
-        </div>
-      </div>
-    </header>
-    <section id="hero">
-      <!-- Contenido de la Hero Section -->
-      <div class="container">
-        <div class="title-container">
-          <span>tecnología</span>
-          <span>renovada</span>
-        </div>
-      </div>
-    </section>
-    <main>
-      <div class="container">
-        <div class="columns-container">
-          <div class="product-images-block">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-            unde! Obcaecati non cum illum, rem voluptatem commodi exercitationem
-            accusantium, quod voluptatum aspernatur amet ab! Quo soluta aut
-            reiciendis labore corporis?
-          </div>
-          <div class="product-description-block">
-            <h1 class="title">Nombre del Producto</h1>
-            <form class="selector">
-              <fieldset>
-                <label class="label" for="color">Color</label>
-                <select type="text" placeholder="Selecciona un color">
-                  <option>Black</option>
-                </select>
-              </fieldset>
-            </form>
-            <p>Descripción</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              aperiam, voluptatibus cupiditate cum beatae soluta repellendus!
-              Delectus ex nihil laboriosam aliquam neque error dignissimos nulla
-              facilis eius, deleniti soluta facere?
-            </p>
-          </div>
-          <div class="product-checkout-block">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-            unde! Obcaecati non cum illum, rem voluptatem commodi exercitationem
-            accusantium, quod voluptatum aspernatur amet ab! Quo soluta aut
-            reiciendis labore corporis?
-          </div>
-        </div>
-        <div class="sales-block">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
-          porro, eum minus nobis doloribus pariatur tempora officia a, facilis
-          repellendus, aspernatur veniam. Similique nulla tenetur necessitatibus
-          provident ipsam, incidunt ipsa.
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="columns-container">
-          <div class="col">
-            <ul>
-              <li class="col-main-item">
-                <a href="">Laptops</a>
-              </li>
-              <li class="col-main-item">
-                <a href="">Audio</a>
-              </li>
-              <li class="col-main-item">
-                <a href="">Auriculares</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li class="col-main-item">
-                <a href="">Cómo comprar</a>
-              </li>
-              <li class="col-main-item">
-                <a href="">Formas de pago</a>
-              </li>
-              <li class="col-main-item">
-                <a href="">Envios</a>
-              </li>
-              <li class="col-main-item">
-                <a href="">Devoluciones</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li class="col-main-item">
-                <a href="">Costos y tarifas</a>
-              </li>
-              <li class="col-main-item">
-                <a href="">Impuestos</a>
-              </li>
-              <li class="col-main-item">
-                <a href="">Factuación</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li class="col-main-item">
-                <a href="#">Mis pedidos</a>
-              </li>
-              <li class="col-main-item">
-                <a href="#">Pedir nuevamente</a>
-              </li>
-              <li class="col-main-item">
-                <a href="#">Lista de deseos</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li class="col-main-item">
-                <a href="">Garantía de entrega</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">Curso de HTML + CSS 2023</div>
+        </nav>
+        <hr />
+        <p>&copy; 2024 Ignition My Website. All rights reserved.</p>
       </div>
     </footer>
   </body>
